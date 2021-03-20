@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.11)  19 MAR 2021 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.11)  20 MAR 2021 13:52
 entering extended mode
 **./rapport_LaTeX.tex
 (rapport_LaTeX.tex
@@ -411,38 +411,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Non-Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 19.
+(Font)              <10.95> on input line 16.
 
-[1] (D:\LaTeX\tex/latex/listings\lstlang1.sty
+[1] [2] (D:\LaTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-1.
- (D:\LaTeX\tex/latex/lm\t1lmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+8.
+
+(D:\LaTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2] (rapport_LaTeX.aux) ) 
+) [3] [4] (rapport_LaTeX.aux) ) 
 Here is how much of TeX's memory you used:
- 7270 strings out of 479361
- 96141 string characters out of 2875206
- 841032 words of memory out of 3000000
- 24596 multiletter control sequences out of 15000+200000
+ 7284 strings out of 479361
+ 96339 string characters out of 2875206
+ 1150032 words of memory out of 3000000
+ 24610 multiletter control sequences out of 15000+200000
  445394 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,7n,88p,236b,1314s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/LaTeX/fonts/enc/dvips/lm/lm-ec.enc}{D:/LaTeX/fon
-ts/enc/dvips/lm/lm-rm.enc}{D:/LaTeX/fonts/enc/dvips/lm/lm-mathex.enc}{D:/LaTeX/
-fonts/enc/dvips/lm/lm-mathit.enc}{D:/LaTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<D:
-/LaTeX/fonts/type1/public/lm/lmbx12.pfb><D:/LaTeX/fonts/type1/public/lm/lmex10.
-pfb><D:/LaTeX/fonts/type1/public/lm/lmmi10.pfb><D:/LaTeX/fonts/type1/public/lm/
-lmmi6.pfb><D:/LaTeX/fonts/type1/public/lm/lmmi8.pfb><D:/LaTeX/fonts/type1/publi
-c/lm/lmr10.pfb><D:/LaTeX/fonts/type1/public/lm/lmr12.pfb><D:/LaTeX/fonts/type1/
-public/lm/lmr17.pfb><D:/LaTeX/fonts/type1/public/lm/lmr6.pfb><D:/LaTeX/fonts/ty
-pe1/public/lm/lmr8.pfb><D:/LaTeX/fonts/type1/public/lm/lmsy10.pfb><D:/LaTeX/fon
-ts/type1/public/lm/lmsy8.pfb><D:/LaTeX/fonts/type1/public/lm/lmtt9.pfb><D:/LaTe
-X/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport_LaTeX.pdf (3 pages, 210548 bytes).
+ 83i,7n,88p,241b,1826s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/LaTeX/fonts/enc/dvips/lm/lm-ec.enc}{D:/LaTeX
+/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/LaTeX/fonts/enc/dvips/lm/lm-mathex.enc}{D
+:/LaTeX/fonts/enc/dvips/lm/lm-rm.enc}{D:/LaTeX/fonts/enc/dvips/lm/lm-mathit.enc
+}<D:/LaTeX/fonts/type1/public/lm/lmbx12.pfb><D:/LaTeX/fonts/type1/public/lm/lme
+x10.pfb><D:/LaTeX/fonts/type1/public/lm/lmmi10.pfb><D:/LaTeX/fonts/type1/public
+/lm/lmmi8.pfb><D:/LaTeX/fonts/type1/public/lm/lmr10.pfb><D:/LaTeX/fonts/type1/p
+ublic/lm/lmr12.pfb><D:/LaTeX/fonts/type1/public/lm/lmr17.pfb><D:/LaTeX/fonts/ty
+pe1/public/lm/lmr6.pfb><D:/LaTeX/fonts/type1/public/lm/lmr8.pfb><D:/LaTeX/fonts
+/type1/public/lm/lmsy10.pfb><D:/LaTeX/fonts/type1/public/lm/lmsy8.pfb><D:/LaTeX
+/fonts/type1/public/lm/lmtt9.pfb>
+Output written on rapport_LaTeX.pdf (5 pages, 223033 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
