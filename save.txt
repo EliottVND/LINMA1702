@@ -1,0 +1,52 @@
+# Résolution du problème
+model_I2 = Model('multi-centre', sense=MINIMIZE, solver_name=CBC)
+model_I2.clear() # On clear pour être sûr que le modèle soit réinitialisé comme il faut
+
+# Initialisation des variables
+x,y,z,n_s = init_variables(model_I2, m, n, len(days))
+n_s_init, province, tranche = init_population(population_Province, m, n)
+
+# Objectif
+model_I2.objective = minimize(xsum(_epsilon[i,t] * _lambda[province[j]][tranche[i]] * n_s[t-1][j][i] 
+                                for i in range(m) for j in range(n) for t in days[1:-1]))
+
+# Contrainte sur le coût total
+model_I2 +=  xsum(c_tr * x[t][j] for j in range(n) for t in days-1) \
+         + xsum(c_v * y[t][j][i] for i in range(m) for j in range(n) for t in days-1) \
+         + xsum(c_s * z[t][j] for j in range(n) for t in days-1) <= c_tot
+
+# Contrainte sur la quantité de vaccins livrables au temps t
+for t in days-1:   
+    model_I2 += xsum(x[t][j] for j in range(n)) <= b_c[t]
+    
+# Contrainte sur le nombre de vaccins administrables au temps t    
+for t in days-1:       
+    for j in range(n):                     
+        model_I2 += xsum(y[t][j][i] for i in range(m)) <= b_v # b_v est commun a toutes les provinces
+        
+# Contrainte sur le nombre de personnes vaccinables au temps t        
+for t in days-1:       
+    for j in range(n):        
+        for i in range(m):
+            model_I2 += xsum(y[k][j][i] for k in range(t)) - mu[i] * n_s_init[j][i]  <= 0
+
+# Contraintes physiques
+for t in days-1:       
+    for j in range(n):    
+        # Population de susceptibles hier
+        yn_s = n_s[t-1] if t > 1 else n_s_init
+        for i in range(m):
+            # Contrainte sur la population
+            model_I2 += n_s[t][j][i] - (1 - _lambda[province[j]][tranche[i]]) * yn_s[j][i] + y[t-1][j][i] == 0
+        
+        if t >= 1: 
+            # Contrainte physique sur la quantité de vaccins disponibles et stockables au temps t
+            model_I2 += x[t-1][j] + z[t-1][j] - xsum(y[t][j][i] for i in range(m)) - z[t][j] >= 0
+
+# On ne peut stocker ou administrer aucun vaccin le premier jour.
+for j in range(n):   
+    model_I2 += z[0][j] <= 1e-6
+    for i in range(m):
+        model_I2 += y[0][j][i] <= 1e-6
+        
+model_I2.optimize()
