@@ -1,0 +1,12 @@
+Province,CapaciteTransport,CapaciteStockage,CapaciteVaccination,CoutTransport,CoutDose,CoutStockage
+Bruxelles,14400,22720,1179,2.3,15,0.5
+Province de Flandre occidentale,15600,22400,1318,2.1,16,0.6
+Province de Flandre orientale,13200,28440,1552,2.2,16,0.5
+Province de Liège,13200,20700,1750,2.7,14,0.5
+Province de Namur,13200,9250,670,2.5,14,0.6
+Province du Brabant flamand,14400,21560,1453,2.2,15,0.6
+Province du Brabant wallon,15600,7580,505,2.2,15,0.5
+Province du Hainaut,13200,25120,2036,2.4,14,0.5
+Province du Limbourg,13200,16360,1044,2.2,16,0.4
+Province du Luxembourg,10800,5350,372,3.2,14,0.5
+Province d’Anvers,12000,34870,2767,2.6,16,0.4
