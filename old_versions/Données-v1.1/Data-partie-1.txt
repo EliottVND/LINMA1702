@@ -1,0 +1,127 @@
+Données pour Question I.1
+
+Nombre de jours à prendre en considération :
+350
+
+Livraison prévues (jour puis quantité, uniquement les jours où la quantité n'est pas nulle) :
+7	80000
+14	80000
+21	60000
+28	60000
+35	40000
+42	40000
+49	40000
+56	40000
+63	60000
+70	60000
+77	60000
+84	60000
+91	80000
+98	80000
+105	80000
+112	80000
+119	100000
+126	100000
+133	100000
+140	100000
+147	100000
+154	100000
+161	100000
+168	100000
+175	120000
+182	120000
+189	120000
+196	120000
+203	120000
+210	120000
+217	120000
+224	120000
+231	120000
+238	120000
+245	120000
+252	120000
+259	150000
+266	150000
+273	150000
+280	150000
+287	150000
+294	150000
+301	150000
+308	150000
+315	150000
+322	150000
+329	150000
+336	150000
+343	150000
+350	150000
+
+Classes d'âge
+On considère les 5 classes suivantes : 
+Y = Young       =  0-29 ans
+A = Adult       = 30-49 ans
+S = Senior      = 50-69 ans
+O = Old         = 70-89 ans
+C = Centenarian = 90-   ans
+
+Population
+La population par classe est la suivante :
+Y 3778123 
+A 2846993
+S 2790883
+O 1390502
+C 111533
+(pour la seconde question I.2 avec les provinces : les chiffres de chaque classe d'âge par province
+sont contenus dans le fichier Population_province.csv)
+
+Fraction parmi les personnes susceptibles tombant malade chaque jour (pour le jour t, par classe) : 
+Y 0.000298 * [ 1/5 + sin(t/50-1/5)^2 ]
+A 0.000301 * [ 1/5 + sin(t/50)^2 ]
+S 0.000204 * [ 1/5 + sin(t/50-1/5)^2 ]
+O 0.000209 * [ 1/5 + sin(t/50-2/5)^2 ]
+C 0.000329 * [ 1/5 + sin(t/50-2/5)^2 ]
+(pour la seconde question I.2 avec les provinces : la constante initiale (0.000298 etc.) dans chaque 
+classe d'âge varie par province, cf. le fichier Fraction_malade_province.csv)
+
+Fraction parmi les personnes tombées malades qui va décéder (pour le jour t, par classe) :
+Y : 0.000100 * (6/5-t/1000)
+A : 0.000400 * (6/5-t/1000)
+S : 0.005790 * (6/5-t/1000)
+O : 0.027179 * (6/5-t/1000)
+C : 0.150000 * (6/5-t/1000)
+(fraction indépendante de la province)
+
+Fraction de population disposée et autorisée à se faire vacciner
+Y : 0.3
+A : 0.6
+S : 0.7
+O : 0.9
+C : 0.9
+(remarque : le taux pour la classe Y est bas en raison de la non vaccination en dessous de 18 ans)
+(fraction indépendante de la province)
+
+Livraison : 
+Quantité maximale livrable par jour au centre unique
+infinie (pas de limite)
+Coût de transport (euros par dose)
+0
+
+Centre unique : 
+Capacité de vaccination maximale (doses par jour)
+14646
+Coût de vaccination (euros par dose)
+15 euros
+
+Stockage dans le centre unique :
+Capacité de stockage (doses)
+0
+Coût de stockage (euros par dose par jour)
+N/A
+
+Budget total :
+100 Meuros (100 millions d'euros)
+
+
+---
+Données pour Question I.2 
+
+Cf. fichiers CSV
